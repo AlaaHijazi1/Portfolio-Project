@@ -1,0 +1,81 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+.main {
+  padding-top: calc($padding * 7);
+  min-height: 30vh;
+  background-color: $color-softblue;
+  @include flex-center-Dir-column;
+}
+
+.intro-banner {
+  width: calc(100% - 20%);
+  display: flex;
+  flex-direction: column;
+
+  &__figure {
+    padding: $padding * 2;
+    text-align: center;
+  }
+  &__image {
+    width: 50vw;
+    border-radius: 50%;
+    border: 3px solid $color-darkBlue;
+  }
+  &__article {
+    padding: $padding;
+    margin-bottom: 19px;
+  }
+  &__title,
+  &__description {
+    margin-bottom: 10px;
+  }
+  &__btn {
+    width: 120px;
+    padding: calc($padding * 0.7);
+    border-radius: calc($border-radius + 5px);
+    font-size: 15px;
+    margin-top: 20px;
+    transform: scale(1.1);
+    &--darkblue {
+      @include colorWhite-bg-darkBlue;
+    }
+    &--white {
+      background-color: $color-white;
+      margin-left: 15px;
+      &:hover {
+        @include colorWhite-bg-darkBlue;
+      }
+    }
+    &:focus {
+      transform: scale(1);
+    }
+  }
+}
+@media (min-width: 768px) {
+  .intro-banner {
+    flex-direction: row;
+    margin: 20px;
+    &__figure {
+      @include flex-center;
+    }
+    &__image {
+      width: 30vw;
+      animation: scaleImage 3s infinite;
+    }
+    &__article {
+      margin: auto;
+    }
+  }
+  @keyframes scaleImage {
+    0% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0.9);
+    }
+  }
+} 

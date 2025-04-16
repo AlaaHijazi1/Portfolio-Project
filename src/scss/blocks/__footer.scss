@@ -1,0 +1,7 @@
+@use "../utils/mixins" as *;
+
+.footer {
+  height: 60px;
+  @include colorWhite-bg-darkBlue;
+  @include flex-center;
+}

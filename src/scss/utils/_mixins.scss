@@ -1,0 +1,22 @@
+@use "../utils/variables" as *;
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin flex-center-Dir-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin borderRadius-bg-white {
+  background-color: $color-white;
+  border-radius: $border-radius;
+}
+@mixin colorWhite-bg-darkBlue {
+  background-color: $color-darkBlue;
+  color: $color-white;
+}

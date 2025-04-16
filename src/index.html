@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../dist/main.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__logo">Alaa Hijazi</h1>
+      <nav class="header__nav">
+        <ul class="header__list" id="nav-list">
+          <li class="header__item">
+            <a tabindex="1" class="header__link" href="#">Home</a>
+          </li>
+          <li class="header__item">
+            <a tabindex="2" class="header__link" href="#">Projects</a>
+          </li>
+          <li class="header__item">
+            <a tabindex="3" class="header__link" href="#">Skills</a>
+          </li>
+          <li class="header__item">
+            <a tabindex="4" class="header__link" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__burger" aria-label="burger to open menu">
+        <i class="fas fa-stream" id="burger-menu"></i>
+      </button>
+    </header>
+    <main class="main">
+      <section class="intro-banner">
+        <figure class="intro-banner__figure">
+          <img
+            src="./img/my_Image.jpg"
+            alt="Alaa Hijazi's Image"
+            class="intro-banner__image"
+          />
+        </figure>
+        <article class="intro-banner__article">
+          <h2 class="intro-banner__title">
+            Hi,<br />I'm Alaa Hijazi, I'm Frontend Developer
+          </h2>
+          <p class="intro-banner__description">
+            I am studying computer science at Palestine Technical University
+            Kadoorie, in my third year. I aspire to become a stronger front-end
+            developer. I really want to strengthen my specialization, gain
+            experience in it, and delve deeper into the field.
+          </p>
+          <button
+            class="intro-banner__btn intro-banner__btn--darkblue"
+            tabindex="5"
+          >
+            My Projects
+          </button>
+          <button
+            class="intro-banner__btn intro-banner__btn--white"
+            tabindex="6"
+          >
+            Contact me
+          </button>
+        </article>
+      </section>
+      <section class="latest-Project">
+        <h2 class="latest-Project__title">Latest Projects</h2>
+        <div class="latest-Project__cards">
+          <article class="latest-Project__card">
+            <img
+              src="./img/landing_image.png"
+              alt="Project's Image"
+              width="200"
+              class="latest-Project__image"
+            />
+            <h3 class="latest-Project__Project-Name">Landing Website</h3>
+            <p class="latest-Project__description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Consequuntur, placeat.
+            </p>
+            <button class="latest-Project__btn">
+              <a href="#" class="latest-Project__link" tabindex="7"
+                >See Project</a
+              >
+            </button>
+          </article>
+
+          <article class="latest-Project__card">
+            <img
+              src="./img/Calculator_Image.png"
+              alt="Project's Image"
+              width="200"
+              class="latest-Project__image"
+            />
+            <h3 class="latest-Project__Project-Name">Simple Calculator</h3>
+            <p class="latest-Project__description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Consequuntur, placeat.
+            </p>
+            <button class="latest-Project__btn">
+              <a href="#" class="latest-Project__link" tabindex="8"
+                >See Project</a
+              >
+            </button>
+          </article>
+          <article class="latest-Project__card">
+            <img
+              src="./img/Yummy_image.png"
+              alt="Project's Image"
+              width="200"
+              class="latest-Project__image"
+            />
+            <h3 class="latest-Project__Project-Name">Yummy Website</h3>
+            <p class="latest-Project__description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Consequuntur, placeat.
+            </p>
+            <button class="latest-Project__btn">
+              <a href="#" class="latest-Project__link" tabindex="9"
+                >See Project</a
+              >
+            </button>
+          </article>
+        </div>
+        <button
+          class="latest-Project__btn latest-Project__btn--darkblue"
+          tabindex="10"
+        >
+          Show More
+        </button>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__text">&copy; [alaa Hijazi] 2025</p>
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>

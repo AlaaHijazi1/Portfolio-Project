@@ -1,0 +1,15 @@
+* {
+  transition: all 0.4s ease-in-out;
+}
+
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+a:focus {
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+}
